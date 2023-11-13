@@ -1,5 +1,14 @@
 # go-kafka
-Try by doing this:
+Run Kafka locally via docker
+```
+docker compose up
+
+// or
+
+docker-compose up
+```
+
+Simulate microservices interaction to the kafka by doing this:
 ```
 // run the producer
 go run order/main.go
