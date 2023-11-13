@@ -32,7 +32,7 @@ func main() {
 		ev := consumer.Poll(100)
 		switch e := ev.(type) {
 		case *kafka.Message:
-			logger.Printf("Processing order '%s' fullfillment - %v", string(e.Value), time.Now())
+			logger.Printf("Processing order '%s' stock - %v", string(e.Value), time.Now())
 		case kafka.Error:
 			logger.Fatalf("%% Error: %v\n", e)
 		}
